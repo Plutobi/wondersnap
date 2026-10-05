@@ -25,7 +25,7 @@ test('every model: exactly N finite points inside the globe, deterministic, fast
     const c = buildModel(15, 5000).offset, d = buildModel(15, 5000).offset;
     return { out, same: a.every((v, i) => v === b[i]) && c.every((v, i) => v === d[i]) };
   });
-  expect(rows.out.length).toBe(33);
+  expect(rows.out.length).toBe(37);
   for (const r of rows.out) {
     expect(r.len, r.name).toBe(250000 * 3);
     expect(r.off).toBe(250000 * 4);

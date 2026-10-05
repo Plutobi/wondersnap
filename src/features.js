@@ -6,7 +6,7 @@ export const ALIASES = {
   heart: 'Human Heart', brain: 'Human Brain', kidney: 'Kidney', kidneys: 'Kidney', lung: 'Lungs', lungs: 'Lungs',
   eye: 'Human Eye', eyes: 'Human Eye', ear: 'Human Ear', ears: 'Human Ear', tooth: 'Tooth (Molar)', teeth: 'Tooth (Molar)', molar: 'Tooth (Molar)',
   skull: 'Skull', skeleton: 'Skeleton', bones: 'Skeleton', body: 'Human Body', human: 'Human Body', dna: 'DNA Double Helix', helix: 'DNA Double Helix',
-  cell: 'Animal Cell', car: 'Sports Car', motorcycle: 'Motorcycle', motorbike: 'Motorcycle', bike: 'Motorcycle', plane: 'Airliner',
+  cell: 'Animal Cell', malaria: 'Malaria-Infected Red Cell', plasmodium: 'Malaria-Infected Red Cell', mosquito: 'Anopheles Mosquito', anopheles: 'Anopheles Mosquito', car: 'Sports Car', ev: 'Electric Sedan', electric: 'Electric Sedan', f1: 'Formula 1 Car', formula: 'Formula 1 Car', motorcycle: 'Motorcycle', motorbike: 'Motorcycle', bike: 'Motorcycle', plane: 'Airliner',
   airplane: 'Airliner', aeroplane: 'Airliner', airliner: 'Airliner', jet: 'Turbofan Jet Engine', turbofan: 'Turbofan Jet Engine', rocket: 'Saturn V Rocket',
   saturn: 'Saturn V Rocket', watch: 'Mechanical Watch', battery: 'EV Battery Pack', v8: 'Supercharged HEMI V8', hemi: 'Supercharged HEMI V8',
   engine: 'Inline-4 Engine', radial: 'Radial Aircraft Engine', eiffel: 'Eiffel Tower', pyramid: 'Great Pyramid', colosseum: 'Colosseum',

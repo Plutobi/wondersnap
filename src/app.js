@@ -527,7 +527,7 @@ class App {
     const c0 = project(this.projView, [0, 0, 0]), cx = (c0[0] * 0.5 + 0.5) * W, rr = this.globeRadiusPx();
     // balance the two label columns: split at the median screen x (not the model centre), so neither side overflows
     [...items].sort((p, q) => p.px - q.px).forEach((it, i, arr) => { it.side = arr.length === 1 ? (it.px >= cx ? 1 : -1) : i < Math.floor(arr.length / 2) ? -1 : 1; });
-    const big = `600 ${12 * dpr}px ui-sans-serif, system-ui, "Segoe UI", sans-serif`, small = `400 ${10.5 * dpr}px ui-sans-serif, system-ui, "Segoe UI", sans-serif`;
+    const big = `600 ${12 * dpr}px "Source Sans 3", ui-sans-serif, system-ui, "Segoe UI", sans-serif`, small = `400 ${10.5 * dpr}px "Source Sans 3", ui-sans-serif, system-ui, "Segoe UI", sans-serif`;
     g.textBaseline = 'middle';
     const card = this.$('partCard'), cardBottom = card.hidden ? 0 : (card.getBoundingClientRect().bottom + 14) * dpr;
     for (const side of [-1, 1]) {
@@ -547,9 +547,9 @@ class App {
         g.globalAlpha = a; g.fillStyle = rgbCss(L.color);
         g.beginPath(); g.arc(it.px, it.py, (selected ? 5 : 3) * dpr, 0, Math.PI * 2); g.fill();
         if (selected) { g.strokeStyle = '#fff'; g.lineWidth = 2 * dpr; g.beginPath(); g.arc(it.px, it.py, 11 * dpr, 0, Math.PI * 2); g.stroke(); }
-        g.font = big; g.fillStyle = selected ? '#ffffff' : '#eef6ff'; g.textAlign = side > 0 ? 'left' : 'right';
+        g.font = big; g.fillStyle = selected ? '#fff4dc' : '#f3ead8'; g.textAlign = side > 0 ? 'left' : 'right';
         g.fillText(L.label, lx + side * 4 * dpr, info ? it.ly - 7 * dpr : it.ly);
-        if (info) { g.font = small; g.fillStyle = 'rgba(190, 210, 235, 0.9)'; g.fillText(info, lx + side * 4 * dpr, it.ly + 8 * dpr); }
+        if (info) { g.font = small; g.fillStyle = 'rgba(226, 208, 170, 0.9)'; g.fillText(info, lx + side * 4 * dpr, it.ly + 8 * dpr); }
       }
     }
     g.globalAlpha = 1;

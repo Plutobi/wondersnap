@@ -209,6 +209,6 @@ void main() {
   if (u_mirror > 0.5) uv.x = 1.0 - uv.x;
   vec3 cam = texture(u_tex, uv).rgb * u_dim;
   vec2 q = v_uv - vec2(0.62, 0.5);
-  vec3 bg = vec3(0.012, 0.016, 0.03) + vec3(0.03, 0.045, 0.08) * exp(-dot(q, q) * 3.0);   // no camera: deep-space gradient
+  vec3 bg = vec3(0.022, 0.036, 0.075) + vec3(0.06, 0.05, 0.036) * exp(-dot(q, q) * 3.0);   // no camera: navy gallery wall with a warm spotlight
   f_color = vec4(mix(bg, cam, u_has_tex), 1.0);
 }`;

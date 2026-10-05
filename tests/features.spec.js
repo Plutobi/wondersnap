@@ -248,7 +248,7 @@ test('20 record a video of the session (real-time)', async ({ page }) => {
   noErrors();
 });
 
-test('21 category tabs show each collection; the catalog has 33 models', async ({ page }) => {
+test('21 category tabs show each collection; the catalog has 37 models', async ({ page }) => {
   const noErrors = watchErrors(page);
   await openApp(page);
   const tabs = await page.locator('.tab').allTextContents();
@@ -261,7 +261,7 @@ test('21 category tabs show each collection; the catalog has 33 models', async (
     total += n;
     if (t === 'Anatomy') await shot(page, '21a-anatomy-tab');
   }
-  expect(total).toBe(33);
+  expect(total).toBe(37);
   await page.locator('.tab', { hasText: 'Machines' }).click();
   await page.getByRole('button', { name: 'Mechanical Watch' }).click();
   await play(page, 3.2, null);
